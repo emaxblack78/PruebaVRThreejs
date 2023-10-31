@@ -18,7 +18,7 @@ const material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
 const cube = new THREE.Mesh( geometry, material );
 scene.add( cube );
 
-camera.position.z = 5;
+camera.position.set( 0, 1.6, 5 );
 
 let effect;
 effect = new StereoEffect( renderer );
